@@ -1,4 +1,6 @@
-# Dbz
+# Dbz 
+
+AFTER DOWNLOAD RUN 'npm install' FOR INSTALL PACKAGES
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.3.5.
 

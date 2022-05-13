@@ -1,0 +1,14 @@
+<div class="card">
+  <a class="portfolio-link" data-bs-toggle="modal" >
+    <div class="portfolio-hover">
+      <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+    </div>
+    <img (click)="articleSelect()" class="figure-img img-fluid rounded picture" src="../../assets/img/{{article.picture}}"
+      alt="{{article.picture}}" />
+  </a>
+  <div class="portfolio-caption">
+    <div class="portfolio-caption-heading">{{article.title}}</div>
+    <div class="portfolio-caption-subheading text-muted px-1">{{article.resume}}</div>
+    <button [routerLink]="['/reader']" (click)="articleSelect()" class="btn btn-primary btn mt-3 mb-3">Lire l'article</button>
+  </div>
+</div>

@@ -1,24 +1,21 @@
-<div class="row">    
-      <div class="container py-5">
-        <div class="text-center">
-          <div class="row">
-            <!-- Post header-->
-            <header class="mb-4 ">
-              <!-- Post title-->
-              <h3 class="fw-bolder mb-1 pt-3">Application avec Angular</h3>
-              <!-- Post meta content-->
-              <div class="text-muted fst-italic mb-2">Posté le 09 mai 2022 par Laurent.C</div>
-  
-            </header>
-            <!-- Preview image figure-->
-            <figure class="mb-4 col-lg-6 mx-auto"><img class="img-fluid rounded" src="../../assets/img/welcome.jpg"
-                alt="..." /></figure>
-            <!-- Post content-->
-            <div class="row">
-              <p class="mb-4 col-lg-6 pb-3 mx-auto">Voici un petit exemple d'application réalisée avec Angular pour permettre la lecture d'articles "one page" à un utilisateur. Il s'agit de ma première approche avec le framwork JS conçu par "Google". J'ai, avec celui-ci, appris à manipuler les "component" parents et leurs enfants < > , à concevoir des classes et constructeurs, déplacer le contenu avec des "EventEmitter" et les décorateurs input et output... Chaque articles est cliquable et lisible dans la partie "Reader".  Ils peuvent être rajoutés simplement grâce au tableau [ ] et seront automatiquement indéxé avec une boucle *ngFor.
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>    
+<section class="page-section bg-light" id="articles">
+  <div class="container">
+    <div class="text-center">
+      <div class="row">
+        <div class="card border-warning">
+        <h3 class="section-heading text-uppercase pt-1 pb-3">Bienvenue !</h3>
+        <p class="section-subheading text-muted">Voci un exemple d'application de lecture d'articles, pensée "mobile-first", la navigation est placé sur le bas de l'écran pour
+          un accès plus ergonomique à l'utilisateur. L'incrémentation d'articles est automatique dans les différents composants une fois ceux-ci créés.   
+        </p>   
+        <p class="section-subheading text-muted">Retrouvez les infos dans la partie technique en bas à droite.   
+        </p>       
+        <img class="col-lg-2 mx-auto" src="../../assets/img/goku.gif" alt="goku gif">
+      </div>
+    </div>
+      
+      <div class="row">
+        <app-last-articles></app-last-articles>
+      </div>
+    </div>
   </div>
+</section>

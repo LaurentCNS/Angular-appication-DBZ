@@ -9,6 +9,9 @@ import { MainComponent } from './main/main.component';
 import { ArticlesComponent } from './articles/articles.component';
 import { ReaderComponent } from './reader/reader.component';
 import { HomeComponent } from './home/home.component';
+import { FooterNavComponent } from './footer-nav/footer-nav.component';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { LastArticlesComponent } from './last-articles/last-articles.component';
 
 
 
@@ -20,13 +23,16 @@ import { HomeComponent } from './home/home.component';
     ArticlesComponent,
     ReaderComponent,
     HomeComponent,
+    FooterNavComponent,
+    LastArticlesComponent,
    
   
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    NgbModule
+    NgbModule,
+    FontAwesomeModule
   ],
   providers: [],
   bootstrap: [AppComponent]

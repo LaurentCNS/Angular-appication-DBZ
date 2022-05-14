@@ -1,0 +1,9 @@
+fa-icon{
+    color: white;
+    cursor: pointer;
+}
+
+fa-icon:hover{
+    color: rgb(255, 200, 0);
+    cursor: pointer;
+}

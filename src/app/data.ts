@@ -2,6 +2,7 @@ import { Article } from "./interfaces/articles";
 
 export const ARTICLES : Article[] = [
     {
+    id : 0,
     title : `Akira toriyama`,
     date : `10 mai 2022`,
     resume : `Cela peut paraître étrange, mais alors que Dragon Ball est intimement lié à Akira Toriyama, l'auteur a toujours...`,
@@ -35,6 +36,7 @@ export const ARTICLES : Article[] = [
     picture : `img1.jpg`,
     },
     {
+        id: 1,
         title : `Mais ou est Lunch?`,
         date : `11 mai 2022`,
         resume : `La dernière apparition de Lunch se fit au chapitre 194 (en 1988) où Goku a battu Piccolo. Au chapitre 196, Lunch...`,
@@ -62,6 +64,7 @@ export const ARTICLES : Article[] = [
         picture : `img2.jpg`,
         },
         {
+            id : 2,
             title : `Restaurant DBZ au japon`,
             date : `11 mai 2022`,
             resume : `C’est à Osaka que le lieu vient d’être inauguré et on y baigne naturellement dans l’univers de Dragon Ball et...`,

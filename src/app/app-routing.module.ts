@@ -5,7 +5,7 @@ import { ReaderComponent } from './reader/reader.component';
 
 const routes: Routes = [
   {path: '', component: HomeComponent },
-  {path: 'reader', component: ReaderComponent}
+  {path: 'reader/:id', component: ReaderComponent}
 ];
 
 @NgModule({
@@ -13,3 +13,5 @@ const routes: Routes = [
   exports: [RouterModule]
 })
 export class AppRoutingModule { }
+
+

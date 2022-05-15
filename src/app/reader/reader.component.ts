@@ -1,5 +1,6 @@
 import { Component, Input, OnInit } from '@angular/core';
-import { ConsArticle } from '../class/consArticle';
+import { ARTICLES } from '../data';
+import { Article } from '../interfaces/articles';
 
 @Component({
   selector: 'app-reader',
@@ -7,11 +8,14 @@ import { ConsArticle } from '../class/consArticle';
   styleUrls: ['./reader.component.css']
 })
 export class ReaderComponent implements OnInit {
-  @Input() articleRead !: ConsArticle;
+  article !: Article;
+  articles = ARTICLES
 
   constructor() { }
 
   ngOnInit(): void {
+    console.log(ARTICLES);
+    
   }
 
 }

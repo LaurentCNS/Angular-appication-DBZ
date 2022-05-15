@@ -9,7 +9,11 @@ import { ConsArticle } from '../class/consArticle';
 })
 export class MainComponent implements OnInit {
   articles: ConsArticle[] = [];
+  
   @Output() articleEmitter2: EventEmitter<ConsArticle> = new EventEmitter<ConsArticle>();
+  @Output() articleLasted :  ConsArticle[] = [];
+
+  
 
   constructor() { }
 

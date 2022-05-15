@@ -1,4 +1,7 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
+import { ARTICLES } from '../data';
+import { Article } from '../interfaces/articles';
+
 
 @Component({
   selector: 'app-last-articles',
@@ -7,9 +10,22 @@ import { Component, OnInit } from '@angular/core';
 })
 export class LastArticlesComponent implements OnInit {
 
+   articles: Article[] = ARTICLES;
+   lastArticles = ARTICLES;
+
+
+ 
+  
+  
+
   constructor() { }
 
   ngOnInit(): void {
-  }
+    console.log(this.lastArticles);
+    
+  };
+
+  
+  
 
 }

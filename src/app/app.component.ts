@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { ConsArticle } from './class/consArticle';
 
 @Component({
@@ -9,6 +9,9 @@ import { ConsArticle } from './class/consArticle';
 export class AppComponent {
   title = 'dbz';
   articleRead !: ConsArticle;
+  @Input() articleLasted !: [];
+
+  
  
 
 

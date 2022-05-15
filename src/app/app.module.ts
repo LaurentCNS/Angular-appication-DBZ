@@ -13,6 +13,8 @@ import { FooterNavComponent } from './footer-nav/footer-nav.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { LastArticlesComponent } from './last-articles/last-articles.component';
 import { AboutComponent } from './about/about.component';
+import { DevComponent } from './dev/dev.component';
+import { BookmarkComponent } from './bookmark/bookmark.component';
 
 
 
@@ -27,6 +29,8 @@ import { AboutComponent } from './about/about.component';
     FooterNavComponent,
     LastArticlesComponent,
     AboutComponent,
+    DevComponent,
+    BookmarkComponent,
    
   
   ],

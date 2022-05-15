@@ -1,5 +1,7 @@
-import { Component, Input } from '@angular/core';
+import { Component, Input, Output } from '@angular/core';
 import { ConsArticle } from './class/consArticle';
+
+
 
 @Component({
   selector: 'app-root',
@@ -9,10 +11,18 @@ import { ConsArticle } from './class/consArticle';
 export class AppComponent {
   title = 'dbz';
   articleRead !: ConsArticle;
-  @Input() articleLasted !: [];
 
   
- 
+  
+  @Input() articleLasted !: [];
+  @Input() selectorSent !: string;
+
+
+  
+
+  ngOnInit(): void {
+    //console.log(this.selectorSent);  
+    }
 
 
   articleSend($event : ConsArticle){

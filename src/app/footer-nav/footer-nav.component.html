@@ -4,16 +4,17 @@
         <fa-icon [routerLink]="'/'" [icon]="faHome"></fa-icon>
       </a>
       <a class="navbar-brand">
-        <fa-icon [icon]="faListUl"></fa-icon>
+        <fa-icon [routerLink]="'/main'" [icon]="faListUl"></fa-icon>
       </a>
       <a class="navbar-brand">
-        <fa-icon [icon]="faBookmark"></fa-icon>
+        <fa-icon [routerLink]="['/bookmark']" routerLinkActive="router-link-active"  [icon]="faBookmark"></fa-icon>
       </a>
       <a class="navbar-brand">
-        <fa-icon [icon]="faSun"></fa-icon>
+        <fa-icon (click)="changeTheme('sun')"  *ngIf="activeSelector == 'moon'" [icon]="faMoon"></fa-icon>
+        <fa-icon (click)="changeTheme('moon')" *ngIf="activeSelector == 'sun'" [icon]="faSun"></fa-icon>
       </a>
       <a class="navbar-brand">
-        <fa-icon [icon]="faCode"></fa-icon>
+        <fa-icon [routerLink]="['/dev']" routerLinkActive="router-link-active"  [icon]="faCode"></fa-icon>
       </a>
     </div>
   </nav>

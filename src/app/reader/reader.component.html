@@ -5,17 +5,17 @@
           <!-- Post header-->
           <header class="mb-4 ">
             <!-- Post title-->
-            <h3 class="fw-bolder mb-1 pt-3">demo</h3>
+            <h3 class="fw-bolder mb-1 pt-3">{{article.title}}</h3>
             <!-- Post meta content-->
-            <div class="text-muted fst-italic mb-2">Posté le  par namek.fr</div>
+            <div class="text-muted fst-italic mb-2">Posté le {{article.date}}</div>
 
           </header>
           <!-- Preview image figure-->
           <figure class="mb-4 col-lg-6 mx-auto"><img class="img-fluid rounded mx-auto"
-              src="../../assets/img/" alt="..." /></figure>
+              src="../../assets/img/{{article.picture}}" alt="{{article.picture}}" /></figure>
           <!-- Post content-->
           <div class="row">
-            <p class="mb-4 col-lg-6 pb-3 mx-auto">demo</p>
+            <p class="mb-4 col-lg-6 pb-3 mx-auto">{{article.content}}</p>
           </div>
 
         </div>

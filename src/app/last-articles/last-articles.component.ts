@@ -21,7 +21,7 @@ export class LastArticlesComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
-    console.log(this.lastArticles);
+   // console.log(this.lastArticles);
     
   };
 

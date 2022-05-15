@@ -1,15 +1,19 @@
-<div class="container">
-  <div class="row">
-    <div *ngFor="let getArticle of lastArticles" class="col-lg-3 col-sm-3">
-      <div class="col">
-        <div class="card h-100">
-          <img [routerLink]="['/reader', getArticle.id]" src="../../assets/img/{{getArticle.picture}}" class="figure-img img-fluid rounded" alt="">
-          <div class="card-body">
-            <h5 class="card-title">{{getArticle.title}}</h5>
-            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-          </div>
-        </div>
+<div class="contaier">
+  <h3 class="my-5">Les derniers articles</h3>
+<div class="row">
+  <div *ngFor="let getArticle of lastArticles" class="col-lg-3 col-sm-3 card mx-3 mb-5">
+     <a class="portfolio-link" data-bs-toggle="modal">
+      <div class="portfolio-hover">
+        <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
       </div>
-    </div>
+      <img [routerLink]="['/reader', getArticle.id]" src="../../assets/img/{{getArticle.picture}}" class="img-fluid rounded picture" alt="">
+      </a>
+      <div class="portfolio-caption">
+        <div class="portfolio-caption-heading">{{getArticle.title}}</div>
+        <div class="portfolio-caption-subheading text-muted px-1">{{getArticle.resume}}</div>
+        <button  [routerLink]="['/reader', getArticle.id]" class="btn btn-primary btn mt-3 mb-3">Lire
+          l'article</button>
+      </div>
   </div>
+</div>
 </div>

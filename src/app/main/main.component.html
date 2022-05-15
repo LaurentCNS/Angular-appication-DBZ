@@ -6,8 +6,7 @@
         <p class="section-subheading text-muted">Songoku et ses amis ! Infos et news diverses sur l'univers DB. </p>
       </div>
       <div class="row">
-        <app-articles class="col-lg-4 col-sm-6 mb-4" *ngFor="let article of articles"
-          (articleEmitter)="readSelect($event)" [article]="article"></app-articles>
+        <app-articles></app-articles>
       </div>
     </div>
   </div>

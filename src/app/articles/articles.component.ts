@@ -1,5 +1,7 @@
-import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
-import { ConsArticle } from '../class/consArticle';
+import { Component, OnInit} from '@angular/core';
+import { ARTICLES } from '../data';
+import { Article } from '../interfaces/articles';
+
 
 @Component({
   selector: 'app-articles',
@@ -8,15 +10,14 @@ import { ConsArticle } from '../class/consArticle';
 })
 export class ArticlesComponent implements OnInit {
 
-  @Input() article : ConsArticle = new ConsArticle ('demo','demo','demo','demo','demo');
-  @Output() articleEmitter : EventEmitter<ConsArticle> = new EventEmitter<ConsArticle>();
+  articles: Article[] = ARTICLES;
+  allArticles = ARTICLES;
 
   constructor() { }
 
   ngOnInit(): void {
   }
 
-  articleSelect(): void {
-    this.articleEmitter.emit(this.article)
-  }
+  
+  
 }

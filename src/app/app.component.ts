@@ -19,14 +19,22 @@ export class AppComponent {
 
 
   
+  cssSelector !: string
+
+  
 
   ngOnInit(): void {
-    //console.log(this.selectorSent);  
+      
     }
 
 
   articleSend($event : ConsArticle){
     this.articleRead = $event;
+  }
+
+  selectorGet(type:string) : void {
+    this.cssSelector = type;    
+   // console.log(this.cssSelector);
   }
 
 }

@@ -1,6 +1,6 @@
 <div id="page-top">  
   <app-header></app-header>
   <router-outlet></router-outlet>  
-  <app-footer-nav></app-footer-nav>
+  <app-footer-nav (selectorSent)="selectorGet($event)"></app-footer-nav>
 </div>
 

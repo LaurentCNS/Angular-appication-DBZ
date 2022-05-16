@@ -30,7 +30,7 @@ export class FooterNavComponent implements OnInit {
   changeTheme(clickChange : string) : void{
     this.activeSelector = clickChange;
     this.selectorSent.emit(this.activeSelector); 
-    // console.log(this.selectorSent.emit(this.activeSelector));   
+    //console.log(this.selectorSent.emit(this.activeSelector));   
   }
 
 }

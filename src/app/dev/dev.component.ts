@@ -1,3 +1,4 @@
+import { NgIf, NgIfContext } from '@angular/common';
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { ToastrService } from 'ngx-toastr';
@@ -19,6 +20,11 @@ export class DevComponent implements OnInit {
   }
 
 articleSubmit(){
+  if(this.articleForm.picture == null){
+    this.articleForm.picture = "imguser.jpg"
+  };
+  this.articleForm.date = Date.now();
+  this.articleForm.id = Date.now();
   this.articlesService.addArticle(this.articleForm);
   this.toastrService.success("Article ajouté","Félicitations");
   this.router.navigate(["/"])

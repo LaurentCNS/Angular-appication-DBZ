@@ -4,7 +4,7 @@
       <div class="row">
         <header class="mb-4 ">
           <h3 class="fw-bolder mb-1 pt-3">{{article.title}}</h3>
-          <div class="text-muted fst-italic mb-2">Posté le {{article.date}}</div>
+          <div class="text-muted fst-italic mb-2">Posté le {{article.date| date:'dd/MM/yyyy'}}</div>
         </header>
         <figure class="mb-4 col-lg-6 mx-auto"><img class="img-fluid rounded mx-auto"
             src="../../assets/img/{{article.picture}}" alt="{{article.picture}}" /></figure>

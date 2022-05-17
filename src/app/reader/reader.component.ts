@@ -1,7 +1,7 @@
 import { Component, Input, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
-import { ARTICLES } from '../data';
 import { Article } from '../class/articles';
+import { ArticlesService } from '../services/articles.service';
 
 @Component({
   selector: 'app-reader',
@@ -10,14 +10,14 @@ import { Article } from '../class/articles';
 })
 export class ReaderComponent implements OnInit {
   article !: Article;
-  articles = ARTICLES
+  articles = Article
 
-  constructor(private activatedRoute: ActivatedRoute) { }
+  constructor(private activatedRoute: ActivatedRoute,private articlesService : ArticlesService) { }
 
   ngOnInit(): void {
     // console.log(ARTICLES);
     let id = parseInt(<string>this.activatedRoute.snapshot.paramMap.get('id'))
-    this.article= this.articles.filter(article => article.id === id)[0];   
+    this.article= this.articlesService.articleById(id);   
   }
 
 }

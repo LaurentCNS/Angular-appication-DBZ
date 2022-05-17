@@ -1,21 +1,21 @@
+<div class="form-container">
 <h3>Tableau des articles</h3>
 <button routerLink="/dev" class="btn btn-danger">Retour</button>
 <table class="table">
     <thead>
       <tr>
-        <th scope="col">#</th>
+        <th scope="col">Id</th>
         <th scope="col">Titre</th>
-        <th scope="col">Resumé</th>
-        <th scope="col">Photo</th>
+        <th scope="col">Resumé</th>        
       </tr>
     </thead>
     <tbody>
       <tr *ngFor="let getArticle of articles">
         <th scope="row">{{getArticle.id}}</th>
         <td>{{getArticle.title}}</td>
-        <td>{{getArticle.resume}}</td>
-        <td>{{getArticle.picture}}</td>
+        <td>{{getArticle.resume}}</td>       
       </tr>
     </tbody>
   </table>
   
+</div>

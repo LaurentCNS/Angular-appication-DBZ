@@ -22,7 +22,7 @@ export class FooterNavComponent implements OnInit {
   
   
 
-  constructor() { }
+  constructor( ) { }
 
   ngOnInit(): void {
   }

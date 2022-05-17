@@ -12,7 +12,7 @@ export class AdminComponent implements OnInit {
   constructor(private articlesService : ArticlesService) { }
 
   ngOnInit(): void {
-    //console.log(this.articles);
+    console.log(this.articles);
     
   }
 

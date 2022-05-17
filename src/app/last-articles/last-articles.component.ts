@@ -1,6 +1,6 @@
 import { Component, Input, OnInit } from '@angular/core';
-import { ARTICLES } from '../data';
 import { Article } from '../class/articles';
+import { ArticlesService } from '../services/articles.service';
 
 
 @Component({
@@ -10,15 +10,15 @@ import { Article } from '../class/articles';
 })
 export class LastArticlesComponent implements OnInit {
 
-   articles: Article[] = ARTICLES;
-   lastArticles = ARTICLES;
+   articles: Article[] = this.articlesService.articles;
+   
 
 
  
   
   
 
-  constructor() { }
+  constructor(private articlesService : ArticlesService) { }
 
   ngOnInit(): void {
    // console.log(this.lastArticles);

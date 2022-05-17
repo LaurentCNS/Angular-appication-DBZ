@@ -1,3 +1,4 @@
+import { CssSelector } from '@angular/compiler';
 import { Component, Input, Output } from '@angular/core';
 
 
@@ -11,7 +12,8 @@ export class AppComponent {
   
   @Input() articleLasted !: [];
   @Input() selectorSent !: string;
-
+  
+  
   
   cssSelector !: string
 

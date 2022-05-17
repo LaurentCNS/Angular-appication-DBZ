@@ -18,6 +18,7 @@ import { BookmarkComponent } from './bookmark/bookmark.component';
 import { FormsModule } from '@angular/forms';
 import { ToastrModule } from 'ngx-toastr';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { AdminComponent } from './admin/admin.component';
 
 
 
@@ -34,6 +35,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     AboutComponent,
     DevComponent,
     BookmarkComponent,
+    AdminComponent,
    
   
   ],

@@ -1,4 +1,4 @@
-<div class="container mt-5 mb-5">
+<div class="container mt-5 mb-5 form-container">
   <h3>Accès Administrateur</h3>
   <p>A l'aide de ce formulaire, vous pouvez creer un nouvel article et il sera automatiquement injecté dans le
     code.<br>(Pour l'exercice, pas de base de donnée, Il sera supprimé à chaque rafraichissement).
@@ -36,7 +36,10 @@
         id="photo" name="photo" maxlength="500" [(ngModel)]="articleForm.picture">
 
     </div>
+    <div class="bouton-form mt-3">
+      <button [disabled]="!form.valid" class="btn btn-warning" type="submit">ENOYER</button>
+      <button routerLink="/admin" class="btn btn-danger">Gérer le tableau des articles</button>
+    </div>
 
-    <input [disabled]="!form.valid" class="btn btn-warning mt-3 btnmargin" type="submit">
   </form>
 </div>

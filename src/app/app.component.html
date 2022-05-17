@@ -1,4 +1,4 @@
-<div id="page-top">  
+<div id="page-top" [ngClass]="{'bg-dark font-white' : cssSelector == 'moon'}">  
   <app-header></app-header>
   <router-outlet></router-outlet>  
   <app-footer-nav (selectorSent)="selectorGet($event)"></app-footer-nav>

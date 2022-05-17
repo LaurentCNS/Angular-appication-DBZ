@@ -1,6 +1,6 @@
 import { Component, Input, OnInit } from '@angular/core';
 import { ARTICLES } from '../data';
-import { Article } from '../interfaces/articles';
+import { Article } from '../class/articles';
 
 
 @Component({

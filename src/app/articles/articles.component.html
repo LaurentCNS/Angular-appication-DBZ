@@ -3,7 +3,7 @@
     <div *ngFor="let getArticle of allArticles" class="col-lg-3 col-sm-3">
       <div class="col">
         <div class="card h-100">
-          <img [routerLink]="['/reader', getArticle.id]" src="../../assets/img/{{getArticle.picture}}" class="figure-img img-fluid rounded" alt="">
+          <img [routerLink]="['/reader', getArticle.id]" src="../../assets/img/{{getArticle.picture}}" class="figure-img img-fluid rounded picture" alt="">
           <div class="card-body">
             <h5 class="card-title">{{getArticle.title}}</h5>
             <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>

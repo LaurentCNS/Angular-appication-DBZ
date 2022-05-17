@@ -1,1 +1,42 @@
-<p>dev works!</p>
+<div class="container mt-5 mb-5">
+  <h3>Accès Administrateur</h3>
+  <p>A l'aide de ce formulaire, vous pouvez creer un nouvel article et il sera automatiquement injecté dans le
+    code.<br>(Pour l'exercice, pas de base de donnée, Il sera supprimé à chaque rafraichissement).
+  </p>
+  <form #form="ngForm" (ngSubmit)="articleSubmit()">
+    <div class="form-group">
+
+      <label for="title"></label>
+      <input type="text" class="form-control" placeholder="Titre de l'article" id="title" name="title" #title="ngModel"
+        maxlength="25" required [(ngModel)]="articleForm.title">
+      <div [hidden]="title.valid" class="alert-danger text-danger mb-3">Ce champs est obligatoire</div>
+    </div>
+
+    <div class="form-group">
+
+      <label for="resume"></label>
+      <input type="text" class="form-control" placeholder="Résumé de l'article" id="resume" name="resume"
+        #resume="ngModel" maxlength="110" required [(ngModel)]="articleForm.resume">
+      <div [hidden]="resume.valid" class="alert-danger text-danger mb-3">Ce champs est obligatoire</div>
+    </div>
+
+    <div class="form-group">
+
+      <label for="content"></label>
+      <textarea type="text" class="form-control" placeholder="Contenu de l'article" id="content" name="content"
+        #content="ngModel" maxlength="10000" required [(ngModel)]="articleForm.content"></textarea>
+      <div [hidden]="content.valid" class="alert-danger text-danger mb-3">Ce champs est obligatoire</div>
+
+    </div>
+
+    <div class="form-group">
+
+      <label for="photo"></label>
+      <input type="url" class="form-control" placeholder="Url de la photo (facultatif, si vide image par défault)"
+        id="photo" name="photo" maxlength="500" [(ngModel)]="articleForm.picture">
+
+    </div>
+
+    <input [disabled]="!form.valid" class="btn btn-warning mt-3 btnmargin" type="submit">
+  </form>
+</div>

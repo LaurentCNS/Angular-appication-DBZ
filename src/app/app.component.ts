@@ -1,6 +1,4 @@
 import { Component, Input, Output } from '@angular/core';
-import { ConsArticle } from './class/consArticle';
-
 
 
 @Component({
@@ -9,14 +7,10 @@ import { ConsArticle } from './class/consArticle';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'dbz';
-  articleRead !: ConsArticle;
-
-  
+  title = 'dbz';  
   
   @Input() articleLasted !: [];
   @Input() selectorSent !: string;
-
 
   
   cssSelector !: string
@@ -28,9 +22,6 @@ export class AppComponent {
     }
 
 
-  articleSend($event : ConsArticle){
-    this.articleRead = $event;
-  }
 
   selectorGet(type:string) : void {
     this.cssSelector = type;    

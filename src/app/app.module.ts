@@ -15,6 +15,9 @@ import { LastArticlesComponent } from './last-articles/last-articles.component';
 import { AboutComponent } from './about/about.component';
 import { DevComponent } from './dev/dev.component';
 import { BookmarkComponent } from './bookmark/bookmark.component';
+import { FormsModule } from '@angular/forms';
+import { ToastrModule } from 'ngx-toastr';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 
 
@@ -38,7 +41,11 @@ import { BookmarkComponent } from './bookmark/bookmark.component';
     BrowserModule,
     AppRoutingModule,
     NgbModule,
-    FontAwesomeModule
+    FontAwesomeModule,
+    FormsModule,
+    ToastrModule.forRoot(),
+    BrowserAnimationsModule
+    
   ],
   providers: [],
   bootstrap: [AppComponent]

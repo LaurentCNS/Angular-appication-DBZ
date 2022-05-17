@@ -1,6 +1,6 @@
 import { Component, OnInit} from '@angular/core';
 import { ARTICLES } from '../data';
-import { Article } from '../interfaces/articles';
+import { Article } from '../class/articles';
 
 
 @Component({
@@ -16,6 +16,7 @@ export class ArticlesComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
+    
   }
 
   

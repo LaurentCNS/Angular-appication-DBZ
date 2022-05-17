@@ -1,7 +1,7 @@
 import { Component, Input, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { ARTICLES } from '../data';
-import { Article } from '../interfaces/articles';
+import { Article } from '../class/articles';
 
 @Component({
   selector: 'app-reader',

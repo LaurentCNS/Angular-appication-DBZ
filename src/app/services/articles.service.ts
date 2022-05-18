@@ -105,7 +105,7 @@ export class ArticlesService {
     Universal Jump Summer » du parc, qui se déroulera du 1er au 4 septembre prochain.
     Préparez-vous à vous transformer en Super Saiyen`, `img4.jpg`),
 
-    new Article(1000000000005, false ,`Triste nouvelle 😢`, 1000000000000, `Une triste nouvelle pour tous les fans du Club Dorothée.Ariane Carletti, qui était...`, `Une triste nouvelle pour tous les fans du Club Dorothée. Ariane Carletti, qui était aussi l’interprète des génériques de 
+    new Article(1000000000005, false ,`Triste nouvelle 😢`, 1000000000000, `Une triste nouvelle pour tous les fans du Club Dorothée.Ariane Carletti...`, `Une triste nouvelle pour tous les fans du Club Dorothée. Ariane Carletti, qui était aussi l’interprète des génériques de 
     Dragon Ball et Dragon Ball Z est décédée le 3 septembre 2019 à 61 ans. 
     Une autre icône du Club Do vient de nous quitter. Ariane Carletti, l’interprète des versions françaises des génériques 
     de Dragon Ball et Dragon Ball Z est décédée à l’âge de 61 ans. Cette information a été confirmée par la famille hier, 
@@ -129,10 +129,8 @@ export class ArticlesService {
 
 
 
-  addArticle(article: Article) : void{
-    if(article.picture == null){
-      article.picture = "imguser.jpg"
-};
+  addArticle(article: Article) : void{    
+    article.picture = "imguser.jpg";
     article.date = Date.now();
     article.id = Date.now();
     this.articles.push(article);
@@ -148,6 +146,15 @@ export class ArticlesService {
   remove(id?:number):void{
   this.articles = this.articles.filter(article => article.id != id );  
   }
+
+  update(maj:Article) : void{
+    if(maj.id){
+      let oldArticle : Article = this.articleById(maj.id);
+      oldArticle.title = maj.title 
+    }
+     
+  }
+
 
 }
 

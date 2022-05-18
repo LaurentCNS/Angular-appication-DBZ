@@ -3,6 +3,7 @@ import { ArticlesService } from '../services/articles.service';
 import { faPen, faTrash} from '@fortawesome/free-solid-svg-icons';
 import { Article } from '../class/articles';
 import { ActivatedRoute, Router } from '@angular/router';
+import { ToastrService } from 'ngx-toastr';
 
 @Component({
   selector: 'app-detail',
@@ -18,6 +19,7 @@ export class DetailComponent implements OnInit {
 
   constructor( private activatedRoute: ActivatedRoute,
                private articlesService : ArticlesService,
+               private toastrService: ToastrService,
                private router : Router) { }
 
 
@@ -29,7 +31,8 @@ export class DetailComponent implements OnInit {
 
  deleteArticle(id?:number){
   this.articlesService.remove(id)
-  this.router.navigate(['/admin'])
+  this.toastrService.warning("Article supprimé !");
+  this.router.navigate(['/'])
 
   }
 

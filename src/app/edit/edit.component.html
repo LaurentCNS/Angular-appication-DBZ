@@ -1,0 +1,42 @@
+<div class="container mt-5 mb-5 form-container">
+  <h3 class="mb-5">Modification de l'article id: {{articleEdit.id}}</h3>
+
+  <form #form="ngForm" (ngSubmit)="submitEdit()">
+    <div class="form-group">
+
+      <label for="title">Titre</label>
+      <input type="text" class="form-control mb-3" placeholder="Titre de l'article" id="title" name="title" #title="ngModel"
+        maxlength="25" [(ngModel)]="articleEdit.title">
+
+    </div>
+
+    <div class="form-group">
+
+      <label for="resume">Résumé</label>
+      <input type="text" class="form-control mb-3" placeholder="Résumé de l'article" id="resume" name="resume"
+        #resume="ngModel" maxlength="75" [(ngModel)]="articleEdit.resume">
+
+    </div>
+
+    <div class="form-group">
+
+      <label for="content">Contenu</label>
+      <textarea type="text" class="form-control mb-5" placeholder="Contenu de l'article" id="content" name="content"
+        #content="ngModel" maxlength="10000" [(ngModel)]="articleEdit.content"></textarea>
+
+
+    </div>
+
+
+    <div class="bouton-form mt-3">
+
+      <button class="btn btn-warning" type="submit">MODIFIER</button>
+      <button routerLink="/admin" class="btn btn-danger">Retour au choix des articles</button>
+
+    </div>
+
+
+
+  </form>
+
+</div>

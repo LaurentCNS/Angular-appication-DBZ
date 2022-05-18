@@ -20,6 +20,7 @@ import { ToastrModule } from 'ngx-toastr';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AdminComponent } from './admin/admin.component';
 import { DetailComponent } from './detail/detail.component';
+import { EditComponent } from './edit/edit.component';
 
 
 
@@ -38,6 +39,7 @@ import { DetailComponent } from './detail/detail.component';
     BookmarkComponent,
     AdminComponent,
     DetailComponent,
+    EditComponent,
    
   
   ],

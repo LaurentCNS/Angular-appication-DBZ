@@ -4,6 +4,7 @@ import { AdminComponent } from './admin/admin.component';
 import { BookmarkComponent } from './bookmark/bookmark.component';
 import { DetailComponent } from './detail/detail.component';
 import { DevComponent } from './dev/dev.component';
+import { EditComponent } from './edit/edit.component';
 import { HomeComponent } from './home/home.component';
 import { MainComponent } from './main/main.component';
 import { ReaderComponent } from './reader/reader.component';
@@ -17,6 +18,7 @@ const routes: Routes = [
   { path: 'dev', component: DevComponent },
   { path: 'admin', component: AdminComponent },
   { path: 'detail/:id', component: DetailComponent },
+  { path: 'edit/:id', component: EditComponent },
 ];
 
 @NgModule({

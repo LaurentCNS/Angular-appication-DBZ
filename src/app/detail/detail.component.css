@@ -8,3 +8,16 @@ fa-icon{
     color: rgb(255, 200, 0);
     cursor: pointer;
   }
+
+  .form-container{
+    padding-bottom: 100px;
+}
+
+.bouton-form{
+    display: flex;
+    justify-content: space-between;
+}
+
+.picture{
+  width: 250px;
+}

@@ -2,7 +2,8 @@
   <h3>Accès Administrateur</h3>
   <p>A l'aide de ce formulaire, vous pouvez creer un nouvel article. Il sera automatiquement injecté dans le
     code et auto-incrementé dans les autres composants.
-    <br>(Pour l'exercice, pas de base de données, les données seront réinitialisées à chaque rafraichissement).
+    <br>(Démonstration sans de base de données, le code sera réinitialisé à chaque rafraichissement.)<br><strong> Eléments simples et volontairement réduits</strong>.<br>
+  
   </p>
   <form #form="ngForm" (ngSubmit)="articleSubmit()">
     <div class="form-group">
@@ -30,13 +31,7 @@
 
     </div>
 
-    <div class="form-group">
-
-      <label for="photo"></label>
-      <input type="url" class="form-control" placeholder="Url de la photo (facultatif, si vide image par défault)"
-        id="photo" name="photo" maxlength="500" [(ngModel)]="articleForm.picture">
-
-    </div>
+   
     <div class="bouton-form mt-3">
       <button [disabled]="!form.valid" class="btn btn-warning" type="submit">ENOYER</button>
       <button routerLink="/admin" class="btn btn-danger">Gérer le tableau des articles</button>

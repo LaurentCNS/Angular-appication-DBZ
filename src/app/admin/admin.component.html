@@ -1,21 +1,28 @@
-<div class="form-container">
-<h3>Tableau des articles</h3>
-<button routerLink="/dev" class="btn btn-danger">Retour</button>
-<table class="table">
+<div class="container mt-3 ">
+<div class="form-container mt-5">
+<h3>Gestion des articles</h3>
+<p>Espace pour consulter, modifier ou supprimer les éléments du tableau "articles".<br>
+  (Eléménts volontairement réduit).
+
+</p>
+<table class="table mt-3">
     <thead>
       <tr>
         <th scope="col">Id</th>
         <th scope="col">Titre</th>
-        <th scope="col">Resumé</th>        
+        <th scope="col">Resumé</th>   
+        <th scope="col">Voir</th>     
       </tr>
     </thead>
     <tbody>
       <tr *ngFor="let getArticle of articles">
         <th scope="row">{{getArticle.id}}</th>
         <td>{{getArticle.title}}</td>
-        <td>{{getArticle.resume}}</td>       
+        <td>{{getArticle.resume}}</td>  
+        <td><fa-icon [routerLink]="['/detail', getArticle.id]" [icon]="faEye"></fa-icon></td>     
       </tr>
     </tbody>
   </table>
-  
+  <button routerLink="/dev" class="btn btn-danger ">Retour</button>  
+</div>
 </div>

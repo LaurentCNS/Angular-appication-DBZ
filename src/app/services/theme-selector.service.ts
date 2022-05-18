@@ -4,12 +4,18 @@ import { Injectable, Input } from '@angular/core';
   providedIn: 'root'
 })
 export class ThemeSelectorService {
-  @Input() selectorSent !: string;
-
-   test : string = 'this.selectorSent'
-
-  cssFromService = this.selectorSent
   
+
+   cssSelector !: string ;
+
+  
+
   
   constructor() { }
+
+  valueEmit(value:string){
+    this.cssSelector = value
+    // console.log(this.cssSelector);
+    
+  }
 }

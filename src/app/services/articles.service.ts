@@ -9,7 +9,7 @@ export class ArticlesService {
 
   articles : Article[]=  [
 
-    new Article(1000000000000, `Akira toriyama`, 1000000000000, `Cela peut paraître étrange, mais alors que Dragon Ball est intimement lié à Akira Toriyama, l'auteur a toujours...`, `Même si vous n'avez jamais lu un manga, vous avez sûrement déjà entendu parler de Dragon Ball. Cette bande dessinée
+    new Article(1000000000000, false , `Akira toriyama`, 1000000000000, `Cela peut paraître étrange, mais alors que Dragon Ball est intimement lié à Akira Toriyama, l'auteur a toujours...`, `Même si vous n'avez jamais lu un manga, vous avez sûrement déjà entendu parler de Dragon Ball. Cette bande dessinée
     japonaise, popularisée en France à la fin des années 1980 grâce à la diffusion de son animé dans le Club Dorothée (avant
     d'être commercialisée par les éditions Glénat en 1993), est devenue rapidement un phénomène culturel. Décliné en films
     d'animation, en jeux vidéo et quantité de produits dérivés, Dragon Ball est toujours le deuxième manga le plus vendu au
@@ -37,7 +37,7 @@ export class ArticlesService {
     trop pour m'en séparer." Une confidence tardive qui explique sûrement pourquoi l'homme a accepté de scénariser le film
     Dragon Ball Super : Broly, qui sort enfin sur les écrans français le 13 mars après avoir été plébiscité en Asie.`, `img0.jpg`),
 
-    new Article(1000000000001, `Mais ou est Lunch?`, 1000000000000, `La dernière apparition de Lunch se fit au chapitre 194 (en 1988) où Goku a battu Piccolo. Au chapitre 196, Lunch...`, `En 2003, lors d’un passage à New-York pour la version américaine du Shonen jump, une question est posée à Toriyama :
+    new Article(1000000000001, false ,`Mais ou est Lunch?`, 1000000000000, `La dernière apparition de Lunch se fit au chapitre 194 (en 1988) où Goku a battu Piccolo. Au chapitre 196, Lunch...`, `En 2003, lors d’un passage à New-York pour la version américaine du Shonen jump, une question est posée à Toriyama :
     Question : J’ai remarqué que Lunch avait disparu après l’arrivée de Raditz, que faisait-elle ?
     Réponse de Toriyama : Pour vous dire la vérité, je l’ai totalement oubliée à un moment donné. Et puis je me suis souvenu
     d’elle après un moment et j’ai dû penser à une raison pour laquelle elle avait disparu. Alors j’ai donné l’impression
@@ -59,7 +59,7 @@ export class ArticlesService {
     Mais quand Toriyama dit qu’il l’a oubliée c’est sa mémoire qui lui joue un tour car il ne l’a pas oubliée. En 1988,
     Toriyama avait dû juger que Lunche était trop secondaire pour être utilisée.`, `img1.jpg`),
 
-    new Article(1000000000002, `Restaurant DBZ au japon`, 1000000000000, `C’est à Osaka que le lieu vient d’être inauguré et on y baigne naturellement dans l’univers de Dragon Ball et...`, `Depuis un mois déjà, les fans de manga au Japon peuvent profiter de l’ouverture d’un restaurant dédié à Dragon Ball Z.
+    new Article(1000000000002, false ,`Restaurant DBZ au japon`, 1000000000000, `C’est à Osaka que le lieu vient d’être inauguré et on y baigne naturellement dans l’univers de Dragon Ball et...`, `Depuis un mois déjà, les fans de manga au Japon peuvent profiter de l’ouverture d’un restaurant dédié à Dragon Ball Z.
     Un café-restaurant a été inauguré à Osaka le 8 décembre dernier en l’honneur de cette série.
     Dans ce restaurant inspiré du Dragon Ball Z, baptisé Dragon Ball Cafe & Diner, vous pouvez manger comme votre guerrier
     favori Gokû. Tous les plats et mets délicats qui ont figuré dans l’œuvre d’Akira Toriyama y sont proposés. On peut y
@@ -75,7 +75,7 @@ export class ArticlesService {
     gourmandes. Mais étant donné les milliers de kilomètres qui vous séparent de cet établissement si intriguant, vous
     pouvez toujours aller sur Instagram pour ravir vos pupilles.`, `img2.jpg`),
 
-    new Article(1000000000003, `Easter Egg Batman`, 1000000000000, `La référence à Batman n’a pas été découverte pendant près de 32 ans...`, `Dragon Ball Z est truffé de petits Easter Eggs. Cependant, un détail particulier dans l’arrière-plan d’un ancien épisode
+    new Article(1000000000003, false ,`Easter Egg Batman`, 1000000000000, `La référence à Batman n’a pas été découverte pendant près de 32 ans...`, `Dragon Ball Z est truffé de petits Easter Eggs. Cependant, un détail particulier dans l’arrière-plan d’un ancien épisode
     de l’anime vient tout juste d’être découvert par les fans.
     Dragon Ball est non seulement l’un des anime les plus populaires de tous les temps, mais aussi l’un des plus longs. Avec
     plus de 800 épisodes, il y a beaucoup de place pour les Easter Eggs, et le studio Toei Animation et le créateur Akira
@@ -95,7 +95,7 @@ export class ArticlesService {
     de cela, le créateur de Dragon Ball a inclus des tas d’autres hommages à des œuvres et des personnes célèbres dans son
     modèle de manga. Découvrez les 10 exemples les plus cool dans cet article.`, `img3.jpg`),
 
-    new Article(1000000000004, `Attraction DBZ`, 1000000000000, `La franchise Universal Studios s’apprête à rendre hommage à ...`, `La franchise Universal Studio met de plus en plus en avant ses animations en rapport avec les licences de grands mangas
+    new Article(1000000000004, false ,`Attraction DBZ`, 1000000000000, `La franchise Universal Studios s’apprête à rendre hommage à ...`, `La franchise Universal Studio met de plus en plus en avant ses animations en rapport avec les licences de grands mangas
     japonais. Preuve en est, le parc situé à Osaka (Japon) devrait bientôt inaugurer l’ouverture d’une attraction nommée «
     Dragon Ball Z : The Real 4D ».
     Il devrait s’agir d’un film en image de synthèse qui mêlera la 3D à d’autres effets, notamment des sièges mobiles, pour
@@ -105,7 +105,7 @@ export class ArticlesService {
     Universal Jump Summer » du parc, qui se déroulera du 1er au 4 septembre prochain.
     Préparez-vous à vous transformer en Super Saiyen`, `img4.jpg`),
 
-    new Article(1000000000005, `Triste nouvelle 😢`, 1000000000000, `Une triste nouvelle pour tous les fans du Club Dorothée.Ariane Carletti, qui était...`, `Une triste nouvelle pour tous les fans du Club Dorothée. Ariane Carletti, qui était aussi l’interprète des génériques de 
+    new Article(1000000000005, false ,`Triste nouvelle 😢`, 1000000000000, `Une triste nouvelle pour tous les fans du Club Dorothée.Ariane Carletti, qui était...`, `Une triste nouvelle pour tous les fans du Club Dorothée. Ariane Carletti, qui était aussi l’interprète des génériques de 
     Dragon Ball et Dragon Ball Z est décédée le 3 septembre 2019 à 61 ans. 
     Une autre icône du Club Do vient de nous quitter. Ariane Carletti, l’interprète des versions françaises des génériques 
     de Dragon Ball et Dragon Ball Z est décédée à l’âge de 61 ans. Cette information a été confirmée par la famille hier, 
@@ -131,7 +131,8 @@ export class ArticlesService {
 
   addArticle(article: Article) : void{
     if(article.picture == null){
-      article.picture = "imguser.jpg"};
+      article.picture = "imguser.jpg"
+};
     article.date = Date.now();
     article.id = Date.now();
     this.articles.push(article);
@@ -144,6 +145,9 @@ export class ArticlesService {
    return elemToreturn;
   }
   
+  remove(id?:number):void{
+  this.articles = this.articles.filter(article => article.id != id );  
+  }
 
 }
 

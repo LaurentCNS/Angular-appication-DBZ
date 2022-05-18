@@ -1,6 +1,7 @@
 import { Component, Input, OnInit } from '@angular/core';
 import { Article } from '../class/articles';
 import { ArticlesService } from '../services/articles.service';
+import { faBookmark, faBookOpenReader} from '@fortawesome/free-solid-svg-icons';
 
 
 @Component({
@@ -11,7 +12,8 @@ import { ArticlesService } from '../services/articles.service';
 export class LastArticlesComponent implements OnInit {
 
    articles: Article[] = this.articlesService.articles;
-   
+   faBookmark = faBookmark;
+   faBook = faBookOpenReader;
 
 
  

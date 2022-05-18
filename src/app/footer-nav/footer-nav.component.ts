@@ -1,5 +1,6 @@
 import { Component, EventEmitter, OnInit, Output } from '@angular/core';
 import { faBookmark,faListUl ,faCode, faHome, faMoon, faSun } from '@fortawesome/free-solid-svg-icons';
+import { ThemeSelectorService } from '../services/theme-selector.service';
 
 
 @Component({
@@ -22,7 +23,7 @@ export class FooterNavComponent implements OnInit {
   
   
 
-  constructor( ) { }
+  constructor( private themeSelectorService : ThemeSelectorService ) { }
 
   ngOnInit(): void {
   }
@@ -30,6 +31,7 @@ export class FooterNavComponent implements OnInit {
   changeTheme(clickChange : string) : void{
     this.activeSelector = clickChange;
     this.selectorSent.emit(this.activeSelector); 
+    this.themeSelectorService.valueEmit(this.activeSelector)
     //console.log(this.selectorSent.emit(this.activeSelector));   
   }
 

@@ -1,3 +1,4 @@
+
 import { Component, OnInit } from '@angular/core';
 import { ThemeSelectorService } from '../services/theme-selector.service';
 
@@ -8,13 +9,15 @@ import { ThemeSelectorService } from '../services/theme-selector.service';
 })
 export class HomeComponent implements OnInit {
   
-  cssValue !: string
+  cssValue   = this.themeSelectorService.cssSelector
+  
 
   constructor( private themeSelectorService : ThemeSelectorService) { }
 
   ngOnInit(): void {
-    this.cssValue = this.themeSelectorService.cssFromService
-    console.log(this.cssValue); 
+   
+    console.log(this.cssValue);
+    
   }
 
   changeTheme(){

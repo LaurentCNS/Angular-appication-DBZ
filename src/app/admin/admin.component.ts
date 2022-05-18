@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Article } from '../class/articles';
 import { ArticlesService } from '../services/articles.service';
+import { faEye} from '@fortawesome/free-solid-svg-icons';
 
 @Component({
   selector: 'app-admin',
@@ -9,6 +10,11 @@ import { ArticlesService } from '../services/articles.service';
 })
 export class AdminComponent implements OnInit {
   articles: Article[] = this.articlesService.articles;
+  faEye = faEye;
+
+
+
+
   constructor(private articlesService : ArticlesService) { }
 
   ngOnInit(): void {

@@ -10,7 +10,7 @@ import { ArticlesService } from '../services/articles.service';
 })
 export class ReaderComponent implements OnInit {
   article !: Article;
-  articles = Article
+  
 
   constructor(private activatedRoute: ActivatedRoute,private articlesService : ArticlesService) { }
 

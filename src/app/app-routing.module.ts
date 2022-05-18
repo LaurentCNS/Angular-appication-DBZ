@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { AdminComponent } from './admin/admin.component';
 import { BookmarkComponent } from './bookmark/bookmark.component';
+import { DetailComponent } from './detail/detail.component';
 import { DevComponent } from './dev/dev.component';
 import { HomeComponent } from './home/home.component';
 import { MainComponent } from './main/main.component';
@@ -15,6 +16,7 @@ const routes: Routes = [
   {path: 'bookmark', component: BookmarkComponent},
   { path: 'dev', component: DevComponent },
   { path: 'admin', component: AdminComponent },
+  { path: 'detail/:id', component: DetailComponent },
 ];
 
 @NgModule({

@@ -19,6 +19,7 @@ import { FormsModule } from '@angular/forms';
 import { ToastrModule } from 'ngx-toastr';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AdminComponent } from './admin/admin.component';
+import { DetailComponent } from './detail/detail.component';
 
 
 
@@ -36,6 +37,7 @@ import { AdminComponent } from './admin/admin.component';
     DevComponent,
     BookmarkComponent,
     AdminComponent,
+    DetailComponent,
    
   
   ],

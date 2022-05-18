@@ -1,7 +1,8 @@
 <div class="container mt-5 mb-5 form-container">
   <h3>Accès Administrateur</h3>
-  <p>A l'aide de ce formulaire, vous pouvez creer un nouvel article et il sera automatiquement injecté dans le
-    code.<br>(Pour l'exercice, pas de base de donnée, Il sera supprimé à chaque rafraichissement).
+  <p>A l'aide de ce formulaire, vous pouvez creer un nouvel article. Il sera automatiquement injecté dans le
+    code et auto-incrementé dans les autres composants.
+    <br>(Pour l'exercice, pas de base de données, les données seront réinitialisées à chaque rafraichissement).
   </p>
   <form #form="ngForm" (ngSubmit)="articleSubmit()">
     <div class="form-group">
@@ -16,7 +17,7 @@
 
       <label for="resume"></label>
       <input type="text" class="form-control" placeholder="Résumé de l'article" id="resume" name="resume"
-        #resume="ngModel" maxlength="110" required [(ngModel)]="articleForm.resume">
+        #resume="ngModel" maxlength="75" required [(ngModel)]="articleForm.resume">
       <div [hidden]="resume.valid" class="alert-danger text-danger mb-3">Ce champs est obligatoire</div>
     </div>
 

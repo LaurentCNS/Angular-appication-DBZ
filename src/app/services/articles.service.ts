@@ -130,6 +130,10 @@ export class ArticlesService {
 
 
   addArticle(article: Article) : void{
+    if(article.picture == null){
+      article.picture = "imguser.jpg"};
+    article.date = Date.now();
+    article.id = Date.now();
     this.articles.push(article);
   };
 

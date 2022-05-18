@@ -19,16 +19,11 @@ export class DevComponent implements OnInit {
   ngOnInit(): void {
   }
 
-articleSubmit(){
-  if(this.articleForm.picture == null){
-    this.articleForm.picture = "imguser.jpg"
-  };
-  this.articleForm.date = Date.now();
-  this.articleForm.id = Date.now();
+articleSubmit(){  
   this.articlesService.addArticle(this.articleForm);
   this.toastrService.success("Article ajouté","Félicitations");
   this.router.navigate(["/"])
-  console.log(this.articleForm);  
+  // console.log(this.articleForm);  
 }
 
 }

@@ -3,24 +3,23 @@
   <p class="section-subheading text-muted mb-5">Derniers articles ajoutés sur Namek News</p>
 
   
-  <div class="row">
-    <div *ngFor="let getArticle of articles" class="col-lg-3 col-sm-3 card mx-3 mb-5">
+  <div class="row d-flex justify-content-center">
+    <div *ngFor="let getArticle of articles" class="col-lg-3 col-md-6 col-sm-8 col-8 card me-3 mb-5 p-0 ms-3 article">
       <a class="portfolio-link" data-bs-toggle="modal">
         <div class="portfolio-hover">
           <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
         </div>
         <img [routerLink]="['/reader', getArticle.id]" src="../../assets/img/{{getArticle.picture}}"
-          class="img-fluid rounded picture" alt="">
+          class="img-fluid rounded picture mb-3" alt="">
       </a>
       <div class="portfolio-caption">
         <div class="portfolio-caption-heading">{{getArticle.title}}</div>
         <div class="portfolio-caption-subheading text-muted px-1">{{getArticle.resume}}</div>
-        <div class="row justify-content-evenly">
-          <div class="mt-3 mb-3 d-flex justify-content-evenly">
+        <div class="row justify-content-center">
+          <div class="mt-3 mb-3 d-flex justify-content-center">
             
-              <fa-icon class="ms-5" [routerLink]="['/reader', getArticle.id]" [icon]="faBook"></fa-icon>            
-              <fa-icon class="me-5" [icon]="faBookmark"></fa-icon>
-            
+              <button [routerLink]="['/reader', getArticle.id]" type="button" class="btn btn-warning mb-2">lire l'article</button>          
+             
           </div>
         </div>
       </div>

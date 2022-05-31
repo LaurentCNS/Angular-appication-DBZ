@@ -1,6 +1,6 @@
 <div class="container">
-  <div class="row">
-    <div *ngFor="let getArticle of articles" class="col-lg-3 col-sm-3">
+  <div class="row d-flex justify-content-center mt-5">
+    <div *ngFor="let getArticle of articles" class="col-xl-4 col-lg-6 col-md-8 col-sm-10 col-10 ms-3 me-3 mb-5">
       <div class="col">
         <div class="card h-100">
           <img [routerLink]="['/reader', getArticle.id]" src="../../assets/img/{{getArticle.picture}}" class="figure-img img-fluid rounded picture" alt="">

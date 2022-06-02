@@ -1,44 +1,35 @@
 <div class="container mt-5 mb-5 form-container">
   <h3>Accès Administrateur</h3>
-  <p>A l'aide de ce formulaire, vous pouvez creer un nouvel article. Il sera automatiquement injecté dans le
+  <p class="sousTitres mb-5">A l'aide de ce formulaire, vous pouvez creer un nouvel article. Il sera automatiquement
+    injecté dans le
     code et auto-incrementé dans les autres composants.
-    <br>(Démonstration sans de base de données, le code sera réinitialisé à chaque rafraichissement.)<br><strong> Eléments simples et volontairement réduits</strong>.<br>
-  
+    <br>(Démonstration sans de base de données, le code sera réinitialisé à chaque rafraichissement.)<br><strong>
+      Eléments simples et volontairement réduits</strong>.<br>
   </p>
-  <form #form="ngForm" (ngSubmit)="articleSubmit()">
-    <div class="form-group">
-
-      <label for="title"></label>
-      <input type="text" class="form-control" placeholder="Titre de l'article" id="title" name="title" #title="ngModel"
-        maxlength="25" required [(ngModel)]="articleForm.title">
-      <div [hidden]="title.valid" class="alert-danger text-danger mb-3">Ce champs est obligatoire</div>
-    </div>
-
-    <div class="form-group">
-
-      <label for="resume"></label>
-      <input type="text" class="form-control" placeholder="Résumé de l'article" id="resume" name="resume"
-        #resume="ngModel" maxlength="75" required [(ngModel)]="articleForm.resume">
-      <div [hidden]="resume.valid" class="alert-danger text-danger mb-3">Ce champs est obligatoire</div>
-    </div>
-
-    <div class="form-group">
-
-      <label for="content"></label>
-      <textarea type="text" class="form-control" placeholder="Contenu de l'article" id="content" name="content"
-        #content="ngModel" maxlength="10000" required [(ngModel)]="articleForm.content"></textarea>
-      <div [hidden]="content.valid" class="alert-danger text-danger mb-3">Ce champs est obligatoire</div>
-
-    </div>
-
-   
-    <div class="bouton-form mt-3">
-      <button [disabled]="!form.valid" class="btn btn-warning" type="submit">ENOYER</button>
-      <button routerLink="/admin" class="btn btn-danger">Gérer le tableau des articles</button>
-    </div>
-
-
-
-  </form>
+  <div class="card">
+    <form #form="ngForm" (ngSubmit)="articleSubmit()">
+      <div class="form-group mt-3 ps-5 pe-5">
+        <label for="title"></label>
+        <input type="text" class="form-control sousTitres" placeholder="Titre de l'article" id="title" name="title"
+          #title="ngModel" maxlength="25" required [(ngModel)]="articleForm.title">
+        <div [hidden]="title.valid" class="alert-danger text-danger mb-3">Ce champs est obligatoire</div>
+      </div>
+      <div class="form-group ps-5 pe-5">
+        <label for="resume"></label>
+        <input type="text" class="form-control" placeholder="Résumé de l'article" id="resume" name="resume"
+          #resume="ngModel" maxlength="75" required [(ngModel)]="articleForm.resume">
+        <div [hidden]="resume.valid" class="alert-danger text-danger mb-3">Ce champs est obligatoire</div>
+      </div>
+      <div class="form-group ps-5 pe-5">
+        <label for="content"></label>
+        <textarea type="text" class="form-control" placeholder="Contenu de l'article" id="content" name="content"
+          #content="ngModel" maxlength="10000" required [(ngModel)]="articleForm.content"></textarea>
+        <div [hidden]="content.valid" class="alert-danger text-danger mb-3">Ce champs est obligatoire</div>
+      </div>
+      <div class="bouton-form mt-3">
+        <button [disabled]="!form.valid" class="btn btn-warning ms-3 mt-3 mb-4" type="submit">ENOYER</button>
+        <button routerLink="/admin" class="btn btn-danger me-3 mt-3 mb-4">Gérer le tableau des articles</button>
+      </div>
+    </form>
+  </div>
 </div>
-

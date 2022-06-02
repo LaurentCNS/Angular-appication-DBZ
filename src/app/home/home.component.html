@@ -1,25 +1,38 @@
-<section class="page-section bg-light"   id="articles">
+<section class="page-section" id="articles">
   <div class="container">
     <div class="text-center">
-      <div class="row">
-        <div class="card border-warning">
-        <h3 class="section-heading text-uppercase pt-1 pb-3">Bienvenue !</h3>
-        
-        <p class="section-subheading text-muted">Voci un exemple d'application de lecture d'articles, pensée "mobile-first", la navigation est placé sur le bas de l'écran pour
-          un accès plus ergonomique à l'utilisateur. L'incrémentation d'articles est automatique dans les différents composants une fois ceux-ci créés.   
-        </p>   
-        <p class="section-subheading text-muted">Retrouvez les infos dans la partie technique en bas à droite.   
-        </p>       
-        <img class="col-lg-2 mx-auto" src="../../assets/img/goku.gif" alt="goku gif">
+      <div class="row d-flex justify-content-center mb-5">
+        <div class="col-lg-10">
+          <h3 class="section-heading text-uppercase pt-1 mb-5">Bienvenue !</h3>
+          <ngb-accordion [closeOthers]="true" activeIds="static-1">
+            <ngb-panel id="static-1" title="Rôle de cette application">
+              <ng-template ngbPanelContent>
+                Exemple d'une application de lecture d'articles avec une zone administration pour la gestion des
+                données.<br> L'auteur d'un nouvel article devra saisir les informations nécessaires dans le formulaire.
+                <br>L'article possédera automatiquement un numéro unique, une date de publication, et se positionnera
+                dans les différentes sessions de l'application. Le but est de permettre à l'administrateur de saisir rapidement et simplement un article sans connaissances techniques.
+              </ng-template>
+            </ngb-panel>
+            <ngb-panel id="static-2">
+              <ng-template ngbPanelTitle>
+                <span>&#9733; Code </span>
+              </ng-template>
+              <ng-template ngbPanelContent>
+                Développé en Angular, le but de cette application est de permettre de lire des articles de manière
+                simple et efficace, sur téléphone "mobile first" ou ordinateur. Les nouveaux articles sont
+                auto-incrémentés dans le code une fois créés et envoyer vers l'api pour le stockage dans la bdd.
+                <br> Dans le cas présent, le code sera injecté en dur dans le service et réinitialisé à chaque
+                rafraichissement. <br> Les articles sont minimalistes dans un simple but démonstratif.
+                <br>
+              </ng-template>
+            </ngb-panel>
+          </ngb-accordion>
+        </div>
       </div>
-    </div>
-      
+      <img  class="col-lg-2  col-5 mx-auto mt-3" src="../../assets/img/goku.gif" alt="goku gif">
       <div class="row">
         <app-last-articles></app-last-articles>
       </div>
     </div>
   </div>
 </section>
-
-
-<!--[ngClass]="{'swap-theme' : cssSelector == 'moon'}"-->

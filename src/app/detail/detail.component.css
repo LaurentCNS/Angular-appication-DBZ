@@ -19,5 +19,12 @@ fa-icon{
 }
 
 .picture{
-  width: 250px;
+  width: 450px;
 }
+
+@media (max-width: 770px) { 
+  .picture{
+    width: 150px;
+  }
+ }
+

@@ -1,15 +1,17 @@
-<div id="reader" class="row">
-  <div class="container py-5">
+<div id="reader">
+  <div class="container">
     <div class="text-center">
       <div class="row">
         <header class="mb-4 ">
-          <h3 class="fw-bolder mb-1 pt-3">{{article.title}}</h3>
-          <div class="text-muted fst-italic mb-2">Posté le {{article.date| date:'dd/MM/yyyy'}}</div>
+          <h3 class="fw-bolder mb-1 mt-5">{{article.title}}</h3>
+          <div class="sousTitres  mb-2">Posté le {{article.date| date:'dd/MM/yyyy'}}</div>
         </header>
-        <figure class="mb-4 col-lg-6 mx-auto"><img class="img-fluid rounded mx-auto"
+        <figure class="mb-4 col-lg-6 col-10 mx-auto"><img class="img-fluid rounded mx-auto"
             src="../../assets/img/{{article.picture}}" alt="{{article.picture}}" /></figure>
-        <div class="row">
-          <p class="mb-4 col-lg-6 pb-3 mx-auto">{{article.content}}</p>
+      </div>
+      <div class="row ">
+        <div class="d-flex justify-content-center">
+          <p class="sousTitres mb-4 col-lg-6 col-12 mb-5">{{article.content}}</p>
         </div>
       </div>
     </div>

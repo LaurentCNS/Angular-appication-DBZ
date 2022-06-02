@@ -12,6 +12,7 @@ import { faBookmark, faBookOpenReader} from '@fortawesome/free-solid-svg-icons';
 export class LastArticlesComponent implements OnInit {
 
    articles: Article[] = this.articlesService.articles;
+   lastArticles : Article[] = this.articles.slice((this.articles.length - 6), this.articles.length).reverse()
    faBookmark = faBookmark;
    faBook = faBookOpenReader;
 
@@ -22,12 +23,12 @@ export class LastArticlesComponent implements OnInit {
 
   constructor(private articlesService : ArticlesService) { }
 
-  ngOnInit(): void {
-   // console.log(this.lastArticles);
-    
+  ngOnInit(): void {    
+    // console.log(this.lastArticles);
   };
 
   
   
 
 }
+

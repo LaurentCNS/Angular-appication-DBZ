@@ -11,7 +11,7 @@ export class AppComponent {
   title = 'dbz';  
   
   @Input() articleLasted !: [];
-  @Input() selectorSent !: string;
+  
   
   
   
@@ -27,7 +27,7 @@ export class AppComponent {
 
   selectorGet(type:string) : void {
     this.cssSelector = type;    
-   // console.log(this.cssSelector);
+   console.log(this.cssSelector);
   }
 
 }

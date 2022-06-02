@@ -1,26 +1,29 @@
 <div class="container mt-5 mb-5 form-container">
   <h3 class="mb-5">Article selectionné: {{article.title}}</h3>
-  
-
-<table class="table mt-3">
-    <thead>
-      <tr>
-        <th scope="col">Miniature</th>
-        
-        <th scope="col">Editer</th>
-        <th scope="col">Supprimer</th>         
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <th scope="row"> <img class="picture" src="../../assets/img/{{article.picture}}" alt="{{article.picture}}"></th>
-        
-        <td><fa-icon class="" [routerLink]="['/edit', article.id]" [icon]="faPen"></fa-icon></td>   
-        <td><fa-icon class="ps-3" (click)="deleteArticle(article.id)" [icon]="faTrash"></fa-icon></td>    
-      </tr>
-    </tbody>
-  </table>
-  <button routerLink="/dev" class="btn btn-danger ">Retour</button>  
-
+  <div class="card col12 mb-4 p-3">
+    <table class="table mt-3">
+      <thead>
+        <tr>
+          <th scope="col">Miniature</th>
+          <th scope="col">Editer</th>
+          <th scope="col">Supprimer</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th scope="row"> <img class="picture" src="../../assets/img/{{article.picture}}" alt="{{article.picture}}">
+          </th>
+          <td>
+            <fa-icon class="" [routerLink]="['/edit', article.id]" [icon]="faPen"></fa-icon>
+          </td>
+          <td>
+            <fa-icon class="ps-3" (click)="deleteArticle(article.id)" [icon]="faTrash"></fa-icon>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <div>
+      <button routerLink="/dev" class="btn btn-danger mt-3">Retour</button>
+    </div>
   </div>
-
+</div>

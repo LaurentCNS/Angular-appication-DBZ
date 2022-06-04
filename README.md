@@ -1,7 +1,8 @@
 # Dbz 
+DEMO https://laurentcantos.fr/workspace/namek/
 
-AFTER DOWNLOAD RUN 'npm install' FOR INSTALL PACKAGES
-AND 'ng add @fortawesome/angular-fontawesome' (select y / font awesome 6 / free solid icons)
+- npm install
+- ng serve
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.3.5.
 

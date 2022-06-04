@@ -1,5 +1,5 @@
 # Dbz 
-DEMO https://laurentcantos.fr/workspace/namek/
+DEMO https://laurentcantos.fr/mywork/namek/
 
 - npm install
 - ng serve

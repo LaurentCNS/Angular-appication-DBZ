@@ -10,19 +10,19 @@
                 Exemple d'une application de lecture d'articles avec une zone administration pour la gestion des
                 données.<br> L'auteur d'un nouvel article devra saisir les informations nécessaires dans le formulaire.
                 <br>L'article possédera automatiquement un numéro unique, une date de publication, et se positionnera
-                dans les différentes sessions de l'application. Le but est de permettre à l'administrateur de saisir rapidement et simplement un article sans connaissances techniques.
+                dans les différentes sessions de l'application. Le but est de permettre aux administrateurs de saisir rapidement et simplement un article sans connaissances techniques.
               </ng-template>
             </ngb-panel>
             <ngb-panel id="static-2">
               <ng-template ngbPanelTitle>
-                <span>&#9733; Code </span>
+                <span> <strong><> Code</strong></span>
               </ng-template>
               <ng-template ngbPanelContent>
-                Développé en Angular, le but de cette application est de permettre de lire des articles de manière
-                simple et efficace, sur téléphone "mobile first" ou ordinateur. Les nouveaux articles sont
-                auto-incrémentés dans le code une fois créés et envoyer vers l'api pour le stockage dans la bdd.
+                Développé en Angular, pensée "mobile first" type application mobile. Les nouveaux articles seront
+                auto-incrémentés dans les composants avec une boucle "*ngFor", le crud se fera sur une api pour la gestion des données avec 
+                un espace connexion protègé "guard".  
                 <br> Dans le cas présent, le code sera injecté en dur dans le service et réinitialisé à chaque
-                rafraichissement. <br> Les articles sont minimalistes dans un simple but démonstratif.
+                rafraichissement. <br> L'application est minimaliste dans un simple but démonstratif.
                 <br>
               </ng-template>
             </ngb-panel>

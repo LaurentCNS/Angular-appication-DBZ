@@ -1,4 +1,4 @@
 .picture{
-    width: 4200px;
-    height: 300px;
+  object-fit: cover;
+    height: 200px;
   }

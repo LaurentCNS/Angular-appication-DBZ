@@ -10,7 +10,7 @@
     <form #form="ngForm" (ngSubmit)="articleSubmit()">
       <div class="form-group mt-3 ps-5 pe-5">
         <label for="title"></label>
-        <input type="text" class="form-control sousTitres" placeholder="Titre de l'article" id="title" name="title"
+        <input type="text" class="form-control" placeholder="Titre de l'article" id="title" name="title"
           #title="ngModel" maxlength="25" required [(ngModel)]="articleForm.title">
         <div [hidden]="title.valid" class="alert-danger text-danger mb-3">Ce champs est obligatoire</div>
       </div>
